@@ -1,0 +1,13 @@
+service: autosheets
+provider:
+  name: aws
+  runtime: python3.7
+  stage: dev
+  region: us-east-1
+
+functions:
+  autosheets:
+    handler: autosheets.handler.autosheets_handler
+
+plugins:
+  - serverless-python-requirements

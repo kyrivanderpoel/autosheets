@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "autosheets"
+version = "0.0.1"
+description = "A Python tool for updating my Google Sheets"
+authors = ["Kyri Vanderpoel <vanderpoel.kyriay@gmail.com>"]
+readme = "README.md"
+keywords = ["Spreadsheet", "Google Sheets", "Python"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pygsheets = "^2.0.2"
+attr = "^0.3.1"
+arrow = "^0.15.5"
+
+[tool.poetry.dev-dependencies]
+isort = "^4.3.21"
+
+[tool.black]
+line-length = 120
+target-version = ["py37"]
+include = "autosheets"
